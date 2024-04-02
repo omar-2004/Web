@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  min-height: 90dvh;
+  background-color: linear-gradient(to right, #ff7e5f, #feb47b);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+section article {
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+section article:nth-child(1) {
+  background-color: red;
+  width: clamp(360px, 60%, 900px);
+}
+section article:nth-child(2) {
+  width: clamp(360px, 30%, 500px);
+  background-color: blue;
+}/*# sourceMappingURL=homePage.css.map */

@@ -1,0 +1,97 @@
+<!--  -->
+{%block style%}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/navbar.css') }}"
+/>
+<script
+  src="https://kit.fontawesome.com/8254f1fa07.js"
+  crossorigin="anonymous"
+  defer
+></script>
+<script defer>
+  document.addEventListener("DOMContentLoaded", (event) => {
+    const toggleBtn = document.querySelector(".toggle_btn");
+    const dropdownMenu = document.querySelector(".dropdownMenu");
+    const toggleBtnIcon = document.querySelector(".toggle_btn i");
+    if (toggleBtn && dropdownMenu && toggleBtnIcon) {
+      toggleBtn.onclick = function () {
+        dropdownMenu.classList.toggle("open");
+        const isOpen = dropdownMenu.classList.contains("open");
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-times"
+          : "fa-solid fa-bars";
+      };
+    }
+  });
+</script>
+{%endblock%}
+<!--  -->
+{%block content%}
+
+<header>
+  <div class="navbar">
+    <div class="logo">
+      <a href="#WebPageName">Let's Build</a>
+    </div>
+    <ul class="links">
+      <li><a href="#Page1">Home</a></li>
+      <li><a href="#Page1">About Us</a></li>
+      <li>
+        <a href="#MakeAppointement" class="action_btn">Make appointment</a>
+      </li>
+      <!-- <li><a href="#Page1"></a></li> -->
+      <li>
+        <div class="lang-menu">
+          <div class="selected-lang">English</div>
+          <ul>
+            <li>
+              <a href="#IT" class="it">Italian</a>
+            </li>
+            <li>
+              <a href="#ENG" class="en">English</a>
+            </li>
+            <li>
+              <a href="#Fr" class="fr">French</a>
+            </li>
+            <li>
+              <a href="#Ar" class="ar">Arabic</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </div>
+  <div class="dropdownMenu">
+    <li><a href="#Page1">Home</a></li>
+    <li><a href="#Page1">About Us</a></li>
+    <li>
+      <a href="#MakeAppointement" class="action_btn">Make appointment</a>
+    </li>
+    <!-- <li><a href="#Page1"></a></li> -->
+    <li>
+      <div class="lang-menu">
+        <div class="selected-lang">English</div>
+        <ul>
+          <li>
+            <a href="#DE" class="de">German</a>
+          </li>
+          <li>
+            <a href="#ENG" class="en">English</a>
+          </li>
+          <li>
+            <a href="#Fr" class="fr">French</a>
+          </li>
+          <li>
+            <a href="#Ar" class="ar">Arabic</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </div>
+</header>
+
+{%endblock%}
