@@ -8,7 +8,7 @@ header {
   height: 10vh;
   position: relative;
   padding: 0 2rem;
-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   .navbar {
     width: 100%;
     height: 60px;
@@ -43,8 +43,8 @@ box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     height: 0;
     display: none;
     position: absolute;
-    right: 2rem;
-    top: 60px;
+    right: 1.5rem;
+    top: 50px;
     width: 400px;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
@@ -62,7 +62,7 @@ box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
       justify-content: center;
     }
     &.open {
-      height: 300px;
+      height: 350px;
       display: block;
     }
   }
@@ -96,20 +96,6 @@ a {
   }
 }
 
-#language {
-  background-color: #fff;
-  border: none;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #333;
-  cursor: pointer;
-  &:focus {
-    outline: none;
-  }
-  &::-ms-expand {
-    background-color: red;
-  }
-}
 @media (max-width: 750px) {
   .navbar {
     li {
@@ -178,7 +164,8 @@ a {
   display: block;
 }
 
-.lang-menu ul li:hover {
+.lang-menu ul li:hover,
+.lang-menu ul li:active {
   background-color: #f2f2f2;
 }
 
@@ -210,4 +197,11 @@ a {
 
 .lang-menu:hover ul {
   display: block;
+}
+
+.showLang ul {
+  display: block;
+}
+.unshowLang ul {
+  display: none;
 }

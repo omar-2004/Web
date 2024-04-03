@@ -73,11 +73,19 @@
     </li>
     <!-- <li><a href="#Page1"></a></li> -->
     <li>
-      <div class="lang-menu">
-        <div class="selected-lang">English</div>
+      <div
+        class="lang-menu unshowLang"
+        onclick="this.classList.toggle('unshowLang');this.classList.toggle('showLang');"
+      >
+        <div
+          class="selected-lang"
+          flag-url="https://flagsapi.com/US/flat/32.pn"
+        >
+          English
+        </div>
         <ul>
           <li>
-            <a href="#DE" class="de">German</a>
+            <a href="#IT" class="it">Italian</a>
           </li>
           <li>
             <a href="#ENG" class="en">English</a>
