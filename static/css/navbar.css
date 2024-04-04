@@ -195,9 +195,9 @@ a:hover {
 }
 
 .showLang ul {
-  display: block;
+  display: block !important;
 }
 
 .unshowLang ul {
-  display: none;
+  display: none !important;
 }/*# sourceMappingURL=navbar.css.map */

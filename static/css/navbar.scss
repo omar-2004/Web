@@ -200,8 +200,8 @@ a {
 }
 
 .showLang ul {
-  display: block;
+  display: block !important;
 }
 .unshowLang ul {
-  display: none;
+  display: none !important;
 }
