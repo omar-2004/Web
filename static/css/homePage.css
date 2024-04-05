@@ -20,6 +20,7 @@ section article {
   margin: auto;
 }
 section article:nth-child(1) {
+  padding: 2.5rem 0.5rem;
   width: clamp(360px, 60%, 950px);
   flex-direction: column;
   flex-wrap: nowrap;
